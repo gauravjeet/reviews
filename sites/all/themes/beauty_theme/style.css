@@ -342,7 +342,7 @@ body.sidebar-first #content {
 #sidebar .block {
   padding: 20px 20px 30px 20px; 
   margin-bottom: 20px; 
-  background: url('images/side_bg.gif') no-repeat bottom center; 
+/*  background: url('images/side_bg.gif') no-repeat bottom center; */
   overflow: hidden; 
   clear: both;
 }
@@ -1016,6 +1016,34 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 
 /*-----------------------------------*/
+
+.tag-values a {
+  background-color: #E7E5E3;
+  padding: 4px 5px;
+  border-radius: 4px;
+  font-weight: normal;
+  float: left;
+  margin-left: 5px;
+}
+
+.tag-values a:hover {
+  background-color: #ff8f85;
+  color: white;
+  text-shadow: 0;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#block-views-all-tags-block .content .view .view-content {
+  text-align: center;
+}
+
+.form-item-search-block-form #edit-search-block-form--2 {
+  width: 80% !important;
+}
 
 
 @media only screen and (min-width: 681px) and (max-width: 980px) {
