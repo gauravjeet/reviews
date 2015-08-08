@@ -74,6 +74,9 @@
  * @see template_process()
  */
 ?>
+
+
+
 <?php if (!$page): ?>
   <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <?php endif; ?>
@@ -83,7 +86,7 @@
       <?php print render($title_prefix); ?>
       <?php if (!$page): ?>
         <div class="node-teaser-title">
-        <?php if ($display_submitted): ?><div class="teaser-date"><?php print $date1; ?></div><?php endif; ?>
+        <?php if ($display_submitted): ?><div class="teaser-date <?php // echo $entity_color; ?>"><?php print $date1; ?></div><?php endif; ?>
         <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
         <?php if ($display_submitted): ?>
           <div class="node-teaser-author"><?php print t('Posted by') . ' ' . $name; ?></div>

@@ -61,6 +61,17 @@ function beauty_theme_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
+
+// // Set diffrernt colors
+// //echo '<pre>';print_r();die;
+//   foreach ($vars['page']['content']['system_main']['nodes'] as $nid => $value) {
+//     switch ($value['body']['#entity_type']) {
+//       case 'blog':
+//         $vars['entity_color'] = 'blog-color-css';
+//         break;
+//     }
+//   }
+
 }
 
 /**
