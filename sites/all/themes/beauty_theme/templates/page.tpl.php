@@ -154,8 +154,13 @@
   <?php endif; ?>
 
   <div id="footer">
-    <div id="copyright">
-      <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a> <div class="footer-right"> Developed by <a href="http://gauravjeet.com" class="credits"> GJ</a></div>
+    <div id="copyright" class="footer-links">
+      <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a>
+      |
+      <span class="site-disclaimer footer-links"> <a class="ctools-use-modal ctools-modal-ctools-modal-entity-style" href="<?php echo $front_page; ?>?q=modal/node/nojs/6"> Disclaimer</a></span>
+      |
+      <span class="site-feedback footer-links"> <a class="ctools-use-modal ctools-modal-ctools-modal-entity-style" href="<?php echo $front_page; ?>?q=modal/node/nojs/6"> Feedback</a></span>
+      <div class="footer-right"> Developed by <a href="http://gauravjeet.com" class="credits"> GJ</a></div>
     </div>
   </div>
 </div>

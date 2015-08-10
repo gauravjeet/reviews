@@ -29,6 +29,10 @@ function beauty_theme_breadcrumb($variables) {
  * Override or insert variables into the page template.
  */
 function beauty_theme_preprocess_page(&$vars) {
+
+  // Add JS to close Ctools modal.
+  drupal_add_js(drupal_get_path('theme', 'beauty_theme') . '/js/ctools_close_modal.js');
+
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],

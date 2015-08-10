@@ -1,0 +1,7 @@
+name = Modal Entity
+description = Display an entity inside a modal popup
+core = 7.x
+dependencies[] = ctools
+dependencies[] = entity
+version = 7.x-1.0
+package = Custom

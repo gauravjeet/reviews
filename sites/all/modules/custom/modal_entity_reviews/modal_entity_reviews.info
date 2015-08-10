@@ -1,0 +1,6 @@
+name = Modal Entity Reviews
+description = An add-on module for modal entity
+core = 7.x
+dependencies[] = modal_entity
+version = 7.x-1.0
+package = Custom
