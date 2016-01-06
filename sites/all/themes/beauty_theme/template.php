@@ -66,16 +66,11 @@ function beauty_theme_preprocess_page(&$vars) {
     $vars['secondary_menu'] = FALSE;
   }
 
-// // Set diffrernt colors
-// //echo '<pre>';print_r();die;
-//   foreach ($vars['page']['content']['system_main']['nodes'] as $nid => $value) {
-//     switch ($value['body']['#entity_type']) {
-//       case 'blog':
-//         $vars['entity_color'] = 'blog-color-css';
-//         break;
-//     }
-//   }
-
+  // Sat a default 404 page theme.
+  $header = drupal_get_http_header('status');
+  if ($header == "404 Not Found") {
+    $vars['theme_hook_suggestions'][] = 'page__404_error';
+  }
 }
 
 /**
@@ -104,8 +99,20 @@ function beauty_theme_menu_local_tasks(&$variables) {
  */
 function beauty_theme_preprocess_node(&$variables) {
   $node = $variables['node'];
+  $variables['blog'] = 0;
+  $variables['my_thoughts'] = 0;
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
+  }
+
+  // Prepend quotes.
+  if ($node->type == 'blog') {
+    $variables['blog'] = 1;
+    $variables['quote_left'] = '<i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>';
+  }
+  if ($node->type == 'my_thoughts' && $node->field_category[LANGUAGE_NONE][0]['tid'] == 2) {
+    $variables['my_thoughts'] = 1;
+    $variables['quote_info'] = '<i class="fa fa-info fa-3x fa-pull-left fa-border"></i>';
   }
   $variables['date1'] = t('!datetime', array('!datetime' =>  date('\<\s\p\a\n\>d\<\/\s\p\a\n\>\<\b\r\>M\<\b\r\>Y', $variables['created'])));
   $variables['date'] = t('!datetime', array('!datetime' =>  date('l, j F Y', $variables['created'])));

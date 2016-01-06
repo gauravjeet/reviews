@@ -107,6 +107,14 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
+      if ($teaser && $blog):
+        $content['body'][0]['#markup'] = $quote_left . $content['body'][0]['#markup'];
+        endif;
+
+      if ($teaser && $my_thoughts):
+        $content['body'][0]['#markup'] = $quote_info . $content['body'][0]['#markup'];
+        endif;
+
       // Hide comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);

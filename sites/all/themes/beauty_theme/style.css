@@ -406,6 +406,54 @@ body.sidebar-first #content {
   color: white !important;
 }
 
+.content-404 {
+  width: 85% !important;
+
+  overflow: auto;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  padding: 10px;
+}
+
+.error-404-text {
+  font-size: 4.25em;
+  font-weight: 700px;
+}
+
+.error-404-desc {
+  font-size: 1em;
+  font-weight: 700px;
+}
+
+.error-404 {
+  font-size: 1.5em;
+  font-weight: 700px;
+  border: 1px solid #ff8f85;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 50%;
+  padding: 0.25em 0.75em;
+  margin-top: 10px;
+  margin-left: 5px;
+  letter-spacing: 1px;
+}
+
+.error-404:hover {
+  background: #ff8f85;
+  color: white;
+}
+
+.footer-404 {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.page-title-404 {
+  font-size: 15em;
+}
+
 
 /* -------------- Form Elements  ------------- */
 
@@ -970,7 +1018,11 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   font: italic 700 1.3em 'Dancing script', Serif;
 }
 
-
+#see-all-link {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
 
 /*------------------------------------------------
 /* Social icons
@@ -1028,7 +1080,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   border-radius: 4px;
   font-weight: normal;
   float: left;
-  margin-left: 5px;
+  margin: 5px;
 }
 
 .tag-values a:hover {
@@ -1060,24 +1112,17 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 
 
-.A {
+.A, .B, .C {
   border-right: 2px solid #888;
   text-align: center;
   width: 33% !important;
-  margin-bottom: 35px;
-}
-
-.B {
-  border-right: 2px solid #888;
-  text-align: center;
-  width: 33% !important;
+  background: #f8f8f8;
+  height: 200px;
   margin-bottom: 35px;
 }
 
 .C {
-  width: 33% !important;
-  text-align: center;
-  margin-bottom: 35px;
+  border-right: none;
 }
 
 
