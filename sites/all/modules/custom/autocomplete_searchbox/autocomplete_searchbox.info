@@ -1,0 +1,7 @@
+name = Autocomplete Searchbox
+description = Make the search box autocomplete.
+core  = 7.x
+version = 7.x-1.0
+package = Search
+configure = admin/config/search/autocomplete-search-config
+dependencies[] = taxonomy

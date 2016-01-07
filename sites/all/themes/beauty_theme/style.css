@@ -130,7 +130,7 @@ h5 {font-size: 1em; color: #555;}
 h6 {font-size: 1em; color: #555;}
 
 /* LINK */
-a {color: #ff8f85; text-decoration: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+a {color: #ba8fdf; text-decoration: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 a:hover {color: #000;}
 
 
@@ -429,7 +429,7 @@ body.sidebar-first #content {
 .error-404 {
   font-size: 1.5em;
   font-weight: 700px;
-  border: 1px solid #ff8f85;
+  border: 1px solid #ba8fdf;
   border-radius: 20px;
   display: inline-block;
   margin-top: 50%;
@@ -440,7 +440,7 @@ body.sidebar-first #content {
 }
 
 .error-404:hover {
-  background: #ff8f85;
+  background: #ba8fdf;
   color: white;
 }
 
@@ -848,7 +848,7 @@ ul.inline, ul.links.inline {
 
 .field-name-field-tags a {
     background: none repeat scroll 0 0 #E9E9E9;
-    border-color: #CACACA #CACACA #CACACA #FF8F85;
+    border-color: #CACACA #CACACA #CACACA #ba8fdf;
     border-style: solid;
     border-width: 1px 1px 1px 3px;
     color: #615F5F;
@@ -1084,7 +1084,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 
 .tag-values a:hover {
-  background-color: #ff8f85;
+  background-color: #ba8fdf;
   color: white;
   text-shadow: 0;
   -webkit-transform: scale(1.1);
